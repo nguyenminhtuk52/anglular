@@ -1,8 +1,5 @@
-<h1>Day la trang chu</h1>
-<a [routerLink]="['/home']" routerLinkActive="router-link-active" >Trang Chu</a>
-<br>
-<a [routerLink]="['/admin']" routerLinkActive="router-link-active" >Quan Ly</a>
-<br>
-<a [routerLink]="['/product']" routerLinkActive="router-link-active" >San Pham</a>
-
-<router-outlet></router-outlet>
+<h2>Product List Component</h2>
+<app-products [products]="productList"></app-products>
+<hr />
+<h2>Product Add Component</h2>
+<app-product-add></app-product-add>

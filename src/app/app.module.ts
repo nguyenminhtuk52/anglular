@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './component/header/header.component';
-import { FooterComponent } from './component/footer/footer.component';
-import { DashbroadComponent } from './pages/dashbroad/dashbroad.component';
-import { ProductComponent } from './product/product.component';
-import { FormsModule } from '@angular/forms';
-
+import { HeaderComponent } from './components/header/header.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ProductAddComponent } from './components/product-add/product-add.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-    DashbroadComponent,
-    ProductComponent
+    AboutComponent,
+    ProductsComponent,
+    ProductDetailComponent,
+    ProductAddComponent
   ],
   imports: [
     BrowserModule,
