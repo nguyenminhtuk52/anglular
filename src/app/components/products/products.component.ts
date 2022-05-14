@@ -14,7 +14,9 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
   onHandleDelete(id: number) {
-    this.products = this.products.filter(product => product.id !== id);
+    if (window.confirm("Bạn có muốn xóa Không?")) {
+      this.products = this.products.filter(product => product.id !== id);
+    }
   }
   onHandleGetInfo(product: IProduct) {
     this.productDetail = product;
