@@ -4,4 +4,4 @@
 <app-products [products]="productList"></app-products>
 <hr />
 <h2>Thêm </h2>
-<app-product-add></app-product-add>
+<app-product-add (createProduct)="onHandleAdd($event)"></app-product-add>
